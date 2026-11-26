@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cw7dxqyk2bu4b"]
+
+[ext_resource type="PackedScene" uid="uid://52eshq0gpl5u" path="res://environment.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://h58nrimc7mes" path="res://game.gd" id="1_272bh"]
+[ext_resource type="PackedScene" uid="uid://ca7h3egyxlsrw" path="res://mama_kat.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bkckpecwy0ny7" path="res://Placeholders/Kitchen Counter.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dkx8di14vil0p" path="res://Placeholders/Recipe Card.png" id="5_7mycd"]
+[ext_resource type="PackedScene" uid="uid://dsfhq7f33c50i" path="res://player.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cj78gkgsnkreb" path="res://inventory_box.tscn" id="6_272bh"]
+
+[node name="Main" type="Node2D" unique_id=720565545]
+script = ExtResource("1_272bh")
+
+[node name="Environment" parent="." unique_id=1588933150 instance=ExtResource("1_0xm2m")]
+position = Vector2(-17, -207)
+
+[node name="Whitespace on bottom" parent="Environment" unique_id=878857507 instance=ExtResource("1_0xm2m")]
+position = Vector2(-42, 1109)
+
+[node name="Mama Kat" parent="." unique_id=1769874086 instance=ExtResource("1_ig7tw")]
+position = Vector2(974, 531)
+
+[node name="KitchenCounter" type="Sprite2D" parent="." unique_id=1603785917]
+position = Vector2(1079, 665)
+scale = Vector2(1.6360625, 1.1472664)
+texture = ExtResource("3_h2yge")
+
+[node name="UI" type="Node2D" parent="." unique_id=100922181]
+
+[node name="RecipeCard" type="Sprite2D" parent="UI" unique_id=583719970]
+position = Vector2(1688.9999, 905)
+scale = Vector2(0.6523178, 0.96604943)
+texture = ExtResource("5_7mycd")
+
+[node name="Inventory Box" parent="UI" unique_id=758728081 instance=ExtResource("6_272bh")]
+position = Vector2(574, 983)
+
+[node name="Player" parent="." unique_id=205235345 instance=ExtResource("6_7mycd")]
+position = Vector2(984, 778)

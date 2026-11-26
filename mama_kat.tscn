@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ca7h3egyxlsrw"]
+
+[ext_resource type="Texture2D" uid="uid://bdgpl1gg8e8pc" path="res://Placeholders/Mama Kat.png" id="1_bbl7u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w81s2"]
+size = Vector2(729, 900)
+
+[node name="Mama Kat" type="CharacterBody2D" unique_id=143328073]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2030848359]
+position = Vector2(107.00006, 96)
+scale = Vector2(1.0535821, 1.1119931)
+texture = ExtResource("1_bbl7u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1746463725]
+position = Vector2(2, -1)
+shape = SubResource("RectangleShape2D_w81s2")
+
+[node name="Mama Kat" type="Node2D" parent="." unique_id=1769874086]

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://52eshq0gpl5u"]
+
+[ext_resource type="Texture2D" uid="uid://tnsvt1gwqdcs" path="res://Placeholders/Background.png" id="1_00014"]
+[ext_resource type="Texture2D" uid="uid://cg5d5fd6tytlf" path="res://Placeholders/Sink.png" id="2_g4tgr"]
+[ext_resource type="Texture2D" uid="uid://b6yfdp44uiha4" path="res://Placeholders/Oven.png" id="3_dm4p5"]
+[ext_resource type="Texture2D" uid="uid://einoi0ir1bs0" path="res://Placeholders/Fridge.png" id="4_pk5nr"]
+
+[node name="Environment" type="Node2D" unique_id=1588933150]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=339942560]
+position = Vector2(1012.62494, 573.75)
+scale = Vector2(1.2021372, 1.0145502)
+texture = ExtResource("1_00014")
+
+[node name="Sink" type="Sprite2D" parent="Background" unique_id=1290454906]
+position = Vector2(41.783073, 332.86136)
+scale = Vector2(0.9397235, 1.0181046)
+texture = ExtResource("2_g4tgr")
+
+[node name="Oven" type="Sprite2D" parent="Background" unique_id=1657852352]
+position = Vector2(500.151, 35.819763)
+scale = Vector2(0.6165881, 0.94453)
+texture = ExtResource("3_dm4p5")
+
+[node name="Fridge" type="Sprite2D" parent="Background" unique_id=929328923]
+position = Vector2(-470.9608, -154.63637)
+scale = Vector2(0.6834549, 1.0408319)
+texture = ExtResource("4_pk5nr")
